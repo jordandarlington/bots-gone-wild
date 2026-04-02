@@ -1,8 +1,10 @@
 name: CI
 
 on:
-  push:
   pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - main
 
 jobs:
   compile-backend:
@@ -11,7 +13,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: "3.12"
       - name: Install backend dependencies
         run: |
           python -m pip install --upgrade pip
@@ -25,7 +27,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: "22"
       - name: Install frontend dependencies
         run: npm install
         working-directory: frontend
@@ -40,7 +42,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: "3.12"
       - name: Install backend dependencies
         run: |
           python -m pip install --upgrade pip
@@ -56,7 +58,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: "22"
       - name: Install frontend dependencies
         run: npm install
         working-directory: frontend
