@@ -1,9 +1,9 @@
 modules:
   risk-predictor:
-    enabled: true
+    enabled: false
   branch-locker:
     enabled: false
   semantics-analyser:
-    enabled: true
-  teams-notifier:
     enabled: false
+  teams-notifier:
+    enabled: true
