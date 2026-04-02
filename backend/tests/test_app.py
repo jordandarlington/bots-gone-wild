@@ -20,6 +20,6 @@ def test_api_data_endpoint() -> None:
 
     assert response.status_code == 200
     assert isinstance(body, dict)
-    assert body["summary"] == "Hackathon demo data payload"
+    assert body["summary"] == "Hackathon demo dater payload"
     assert isinstance(body["metrics"], list)
     assert len(body["metrics"]) == 3
