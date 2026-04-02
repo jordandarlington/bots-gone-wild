@@ -6,4 +6,4 @@ modules:
   semantics-analyser:
     enabled: false
   teams-notifier:
-    enabled: true
+    enabled: false
