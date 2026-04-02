@@ -1,4 +1,4 @@
-# Hackathon Bots Gone Wild
+# Hackathon Bots Gone Wild.
 
 Simple full-stack starter repo for a hackathon project:
 - `backend/`: Flask API that generates demo dashboard data.
