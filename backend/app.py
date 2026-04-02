@@ -4,6 +4,7 @@ from flask import Flask, jsonify
 
 from data_generator import generate_dashboard_data
 
+# CHECK IF THIS IS BEING PICKED UP BY RISK-PREDICTOR HIGH RISK
 
 def create_app() -> Flask:
     app = Flask(__name__)
