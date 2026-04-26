@@ -1,9 +1,12 @@
 modules:
-  risk-predictor:
+  github-pull-request-initial-comment:
     enabled: true
-  branch-locker:
-    enabled: false
-  semantics-analyser:
-    enabled: false
-  teams-notifier:
+    capabilities:
+      create-pull-request-comment:
+        body: "Thanks for opening this pull request. We'll take a look shortly."
+
+  github-issue-initial-comment:
     enabled: true
+    capabilities:
+      create-issue-comment:
+        body: "Thanks for opening this issue. We'll take a look shortly."
