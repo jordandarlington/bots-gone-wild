@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from datetime import datetime, timezone
 
+# CHECK IF THIS IS BEING PICKED UP BY RISK-PREDICTOR HIGH RISK
+
 
 def generate_dashboard_data() -> dict[str, object]:
     """Generate simple demo payload for frontend consumption."""
