@@ -1,6 +1,6 @@
 modules:
   github-pull-request-initial-comment:
-    enabled: true
+    enabled: false
     capabilities:
       create-pull-request-comment:
         body: "Thanks for opening this pull request. We'll take a look shortly."
@@ -13,3 +13,16 @@ modules:
       create-teams-message:
         title: "New issue opened"
         message: "A new issue was opened. Use the Teams action to view it in GitHub."
+
+  github-check-run-failure-issue:
+    enabled: false
+    checkRunNames:
+      - "ci"
+    capabilities:
+      create-pull-request-comment:
+        body: "A configured check run failed for this pull request. A follow-up issue will be created to track the fix."
+      create-issue:
+        title: "Fix failing check run"
+        body: "A configured check run failed on a pull request and needs follow-up."
+        labels:
+          - ci-failure
