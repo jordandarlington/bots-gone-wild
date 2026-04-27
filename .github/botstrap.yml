@@ -15,7 +15,7 @@ modules:
         message: "A new issue was opened. Use the Teams action to view it in GitHub."
 
   github-check-run-failure-issue:
-    enabled: false
+    enabled: true
     checkRunNames:
       - "test-backed"
     capabilities:
