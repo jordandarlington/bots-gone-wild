@@ -17,7 +17,7 @@ modules:
   github-check-run-failure-issue:
     enabled: false
     checkRunNames:
-      - "ci"
+      - "test-backed"
     capabilities:
       create-pull-request-comment:
         body: "A configured check run failed for this pull request. A follow-up issue will be created to track the fix."
