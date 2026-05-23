@@ -10,6 +10,8 @@ def test_health_endpoint() -> None:
     assert response.status_code == 200
     assert response.get_json() == {"status": "ok"}
 
+    # CHECK IF THIS IS BEING PICKED UP BY RISK-PREDICTOR
+
 
 def test_api_data_endpoint() -> None:
     app = create_app()
